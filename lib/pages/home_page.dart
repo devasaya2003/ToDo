@@ -89,6 +89,8 @@ class _HomePageState extends State<HomePage> {
               db.todoList[index][1] = description.text;
               db.todoList[index][2] = false;
             });
+            title.clear();
+            description.clear();
             Navigator.of(context).pop();
             db.updateData();
           },
